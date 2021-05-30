@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!-- saved from url=(0023)http://127.0.0.1:5500/# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./FCC Landing Page_files/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <title>FCC Landing Page</title>
+    <link rel="stylesheet" href="./FCC Landing Page_files/style.css">
+</head>
+
+<body>
+    <div class="hero section" id="home">
+        <!-- User Story 1 -->
+        <header id="header" class="navbar">
+            <div class="header-wrap">
+                <!-- User Story 2 -->
+                <img id="header-img" src="./FCC Landing Page_files/743282-37824065-Studio-Lorenz_horizontal.png" alt="logo">
+                <!-- User Story 3 -->
+                <nav id="navbar">
+                    <!-- User Story 4 -->
+                    <ul>
+                        <!-- User Story 5 -->
+                        <li><a class="nav-link" href="http://127.0.0.1:5500/#">Portfolio</a></li>
+                        <li><a class="nav-link" href="http://127.0.0.1:5500/#services">Services</a></li>
+                        <li><a class="nav-link" href="http://127.0.0.1:5500/#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="img-flexbox">
+            <div class="img-grid">
+                <img src="./FCC Landing Page_files/34895490286_d14559f485_o_w862z4.jpg" alt="">
+                <img src="./FCC Landing Page_files/IMG_0933.jpg" alt="">
+                <img src="./FCC Landing Page_files/PLLP9169.jpg" alt="">
+                <img src="./FCC Landing Page_files/PLLP9439.jpg" alt="">
+                <img src="./FCC Landing Page_files/PLLP9389.jpg" alt="">
+                <img src="./FCC Landing Page_files/PLLP9497.jpg" alt="">
+                <img src="./FCC Landing Page_files/IMG_3815-2.jpg" alt="">
+                <img src="./FCC Landing Page_files/PLLP9209.jpg" alt="">
+                <img class="img_9" src="./FCC Landing Page_files/5AFF0E43-B4A3-4279-86A8-41A361B46E16_k95wyx.jpg" alt="">
+            </div>
+        </section>
+    </div>
+
+    <div class="services-contact-page" id="services">
+        <div class="section card">
+            <div class="content-main">
+                <h2>Services</h2>
+                <ul>
+                    <li>
+                        <h3><i class="fas fa-palette"></i> Art Documentation</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum cupiditate dicta ea
+                            eaque
+                            neque hic!</p>
+                    </li>
+                    <li>
+                        <h3><i class="fas fa-desktop"></i> Post Production</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum cupiditate dicta ea
+                            eaque
+                            neque hic!</p>
+                    </li>
+                    <li>
+                        <h3><i class="fas fa-camera"></i> Experience</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum cupiditate dicta ea
+                            eaque
+                            neque hic!</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="section" id="contact">
+            <div class="content-main card">
+                <h2>Mailing List</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis dicta tempora maiores accusamus
+                    modi laborum enim perspiciatis eum. Neque, doloribus.</p>
+                <div class="form-wrap">
+                    <!-- User Story 12 -->
+                    <!-- User Story 7 -->
+                    <form action="https://www.freecodecamp.com/email-submit" id="form" class="info">
+                        <!-- User Stories 8, 9, & 10 -->
+                        <input type="email" name="email" id="email" placeholder="Enter Email Here" required="">
+                        <!-- User Story 11 -->
+                        <input type="submit" name="submit" id="submit">
+                    </form>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- User Story 6 -->
+    <footer>
+        <div class="section card" id="video">
+            <h2>Here's a Brief Video On Art Documentation by Digitial Transitions' Division of Cultural Heritage
+            </h2>
+            <div class="video-container">
+                <iframe id="video" width="100%" height="100%" src="./FCC Landing Page_files/Qer2dw92TAg.html" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+            </div>
+        </div>
+    </footer>
+
+
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+<div id="pocket-extension-root"><div class="pocket-egasyq"></div></div><div id="pocket-extension-styles"><style data-emotion="pocket"></style></div></body></html>
